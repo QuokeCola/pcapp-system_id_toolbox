@@ -46,8 +46,6 @@ classdef ADXLInterface < handle
         function this = stop_reading(this)
             this.serial_port_running = false;
             configureCallback(this.serial_interface,"off")
-            load train.mat
-            sound(y,Fs)
         end
         function val = is_reading(this)
             val = this.serial_port_running;

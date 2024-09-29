@@ -33,5 +33,5 @@ void loop() {
   fb_data[10]=Z&data_regulator;
   fb_data[10]=fb_data[10]|(unsigned short)(0x40*(analogRead(A4) < 300));
   Serial.write(fb_data,12);
-  //}
+  }
 }
